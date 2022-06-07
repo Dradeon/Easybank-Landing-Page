@@ -11,10 +11,8 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -31,8 +29,6 @@ Users should be able to:
 
 ![Screenshot](./Screenshots/DesktopScreenshot.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -43,9 +39,9 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- 
 - [React](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 
@@ -53,33 +49,17 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was the first time I used a CSS Framework instead of writing plain CSS. It was definitely a bit challenging to set up everything with the custom properties I wanted to use. Though, it was worth it as it made developing this landing page fast and easy as I didn't have to think about the class names for my elements and switch between the css and jsx file.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div className='relative md:max-h-[32rem] xl:max-h-[42rem]'>
+          <img src='image-mockups.png' alt='mockup' className='relative bottom-20  z-10 sm:bottom-52 md:-right-56 md:bottom-24'></img>
+          <img src='bg-intro-desktop.svg' className='hidden md:block absolute z-0 md:min-w-[1280px] md:-right-[54rem] md:-top-[22rem] lg:-right-[44rem] xl:-right-[36rem] -right-[36rem] '></img>
+          <img src='bg-intro-mobile.svg' className='block absolute z-0 min-w-[375px] -top-6 -right-4 sm:min-w-[640px] sm:-right-8 sm:-top-20 md:hidden'></img>
+</div>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
@@ -90,13 +70,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Bakhtiar Reza](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Dradeon)
+- Website - [Bakhtiar Reza](https://bakhtiar-reza-site.vercel.app/)
+- Frontend Mentor - [@Dradeon](https://www.frontendmentor.io/profile/Dradeon)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
