@@ -1,6 +1,20 @@
 import React from 'react'
 
 const Landing = () => {
+  
+  const handleClick = () => {
+    const button = document.getElementById('NavHamburger');
+    const menu = document.getElementById('mobilemenu');
+    if(button.getAttribute('src') == 'icon-hamburger.svg'){
+      button.setAttribute('src',"icon-close.svg");
+      menu.style.display = 'block';
+    }
+    else{
+      button.setAttribute('src','icon-hamburger.svg');
+      menu.style.display = 'none';
+    }
+  }
+
   return (
     <>
       {/* Navigation */}
@@ -35,7 +49,36 @@ const Landing = () => {
             </li>
           </ul>
           <a href="#" className= 'hidden md:block bg-gradient-to-r from-LimeGreen to-BrightCyan text-White font-sans font-semibold px-6 py-2 rounded-full active:opacity-70'>Request Invite</a>
-          <img src="icon-hamburger.svg" className='md:hidden'></img>
+          <img src="icon-hamburger.svg" id='NavHamburger' onClick={handleClick} className='md:hidden'></img>
+        </div>
+        <div id='mobilemenu' className='absolute bg-gradient-to-b from-DarkBlue to-[rgba(45,49,77,0)] min-w-[100%] min-h-[100vh] top-[100%]  z-50'>
+          <ul className='flex flex-col space-y-3 items-center py-8 bg-White max-w-[90%] my-8 mx-auto text-DarkBlue rounded-lg'>
+              <li>
+            
+                  <a href="#" className='flex bg-White  self-center'>Home</a>
+  
+              </li>
+              <li>
+                
+                  <a href="#" className='flex bg-White self-center '>About</a>
+               
+              </li>
+              <li>
+                
+                  <a href="#" className='flex bg-White self-center '>Contact</a>
+            
+              </li>
+              <li>
+                
+                  <a href="#" className='flex bg-White  self-center '>Blog</a>
+                
+              </li>
+              <li>
+                
+                  <a href="#" className='flex bg-White self-center '>Career</a>
+          
+              </li>
+            </ul>
         </div>
       </nav>
       {/* Hero Section */}

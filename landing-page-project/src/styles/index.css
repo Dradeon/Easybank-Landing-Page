@@ -7,3 +7,7 @@
 *{
   box-sizing: border-box;
 }
+
+#mobilemenu{
+  display: none;
+}
