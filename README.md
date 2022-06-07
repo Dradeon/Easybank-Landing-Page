@@ -41,7 +41,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- 
 - [React](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 
