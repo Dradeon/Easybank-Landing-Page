@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](https://drive.google.com/drive/u/1/folders/1TA1w5MPYh_PkPq6iFG19SrlZRzVMz6Zd)
+![Screenshot](./Screenshots/DesktopScreenshot.png)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
