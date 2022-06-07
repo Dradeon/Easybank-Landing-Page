@@ -40,10 +40,10 @@ const Landing = () => {
       </nav>
       {/* Hero Section */}
       <div className='relative container flex flex-col-reverse items-center px-4 pb-16 mx-auto  md:flex-row' >
-        <div className='flex flex-col content-start gap-4 text-center -mt-12 sm:-mt-32 md:-m-0 md:text-left'>
+        <div className='flex flex-col content-center gap-4 text-center -mt-12 sm:-mt-32 md:-m-0 md:text-left'>
           <h1 className='text-5xl text-DarkBlue font-light max-w-lg sm:text-6xl '>Next generation digital banking</h1>
           <p className='text-md text-GrayishBlue md:text-[22px]  max-w-lg'>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and more.</p>
-          <a href="#" className= 'bg-gradient-to-r from-LimeGreen to-BrightCyan text-White font-semibold px-6 py-2 rounded-full mt-10 w-max mx-auto active:opacity-70'>Request Invite</a>
+          <a href="#" className= 'bg-gradient-to-r from-LimeGreen to-BrightCyan text-White font-semibold px-6 py-2 rounded-full mt-10 max-w-100%  mx-auto md:mx-0 md:max-w-fit active:opacity-70'>Request Invite</a>
         </div>
         <div className='relative md:max-h-[32rem] xl:max-h-[42rem] '>
           <img src='image-mockups.png' alt='mockup' className='relative bottom-20  z-10 sm:bottom-52 md:-right-56 md:bottom-24'></img>
