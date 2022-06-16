@@ -5,7 +5,7 @@ const Landing = () => {
   const handleClick = () => {
     const button = document.getElementById('NavHamburger');
     const menu = document.getElementById('mobilemenu');
-    if(button.getAttribute('src') == 'icon-hamburger.svg'){
+    if(button.getAttribute('src') === 'icon-hamburger.svg'){
       button.setAttribute('src',"icon-close.svg");
       menu.style.display = 'block';
     }
@@ -82,7 +82,7 @@ const Landing = () => {
         </div>
       </nav>
       {/* Hero Section */}
-      <div className='relative container flex flex-col-reverse items-center px-4 pb-16 mx-auto  md:flex-row' >
+      <div className='relative container flex flex-col-reverse items-center px-4 pb-16  mx-auto md:flex-row ' >
         <div className='flex flex-col content-center gap-4 text-center -mt-12 sm:-mt-32 md:-m-0 md:text-left'>
           <h1 className='text-5xl text-DarkBlue font-light max-w-lg sm:text-6xl '>Next generation digital banking</h1>
           <p className='text-md text-GrayishBlue md:text-[22px]  max-w-lg'>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and more.</p>
@@ -90,8 +90,8 @@ const Landing = () => {
         </div>
         <div className='relative md:max-h-[32rem] xl:max-h-[42rem] '>
           <img src='image-mockups.png' alt='mockup' className='relative bottom-20  z-10 sm:bottom-52 md:-right-56 md:bottom-24'></img>
-          <img src='bg-intro-desktop.svg' className='hidden md:block absolute z-0 md:min-w-[1280px] md:-right-[54rem] md:-top-[22rem] lg:-right-[44rem] xl:-right-[36rem] -right-[36rem] '></img>
-          <img src='bg-intro-mobile.svg' className='block absolute z-0 min-w-[375px] -top-6 -right-4 sm:min-w-[640px] sm:-right-8 sm:-top-20 md:hidden'></img>
+          <img src='bg-intro-desktop.svg' alt='Desktop Bg' className='hidden md:inline-block absolute z-0 md:min-w-[1280px] md:-right-[54rem] md:-top-[22rem] lg:-right-[44rem] xl:-right-[36rem] -right-[36rem] '></img>
+          <img src='bg-intro-mobile.svg' alt='Mobile Bg' className='inline-block absolute z-0 min-w-[375px] -top-6 -right-4 sm:min-w-[640px] sm:-right-8 sm:-top-20 md:hidden'></img>
         </div>
       </div>
       {/* Features Section */}
@@ -176,6 +176,7 @@ const Landing = () => {
               <img src='icon-twitter.svg'></img>
               <img src='icon-pinterest.svg'></img>
               <img src='icon-instagram.svg'></img>
+              <a href="https://github.com/Dradeon/Landing-Page-Project" rel="noopener" target={'_blank'}><img src='icon-github.png' width={'20px'} height={'20px'}></img></a>
             </div>
           </div>
           <div className='flex flex-col gap-3 text-White md:flex-row md:text-left md:gap-20'>
